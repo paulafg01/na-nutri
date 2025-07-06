@@ -4,17 +4,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MNA - Mini Avaliação Nutricional</title>
+  <title>MNA - Avaliação Nutricional</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- Formulário MNA-SF -->
+  <h2>Mini Avaliação Nutricional (MNA-SF)</h2>
+
   <form id="mna-sf">
-    <label>Nome do paciente: <input type="text" name="nome" id="nome"></label><br><br>
+    <label>Nome do paciente:</label><br>
+    <input type="text" name="nome" id="nome" required><br><br>
 
     <div class="pergunta">
-      <label>1. Perda de apetite?</label><br>
+      <label>1. Perda de apetite:</label><br>
       <select name="p1">
         <option value="0">Grave</option>
         <option value="1">Moderada</option>
@@ -23,7 +25,7 @@
     </div>
 
     <div class="pergunta">
-      <label>2. Perda de peso?</label><br>
+      <label>2. Perda de peso:</label><br>
       <select name="p2">
         <option value="0">≥3kg</option>
         <option value="1">1–3kg</option>
@@ -33,7 +35,7 @@
     </div>
 
     <div class="pergunta">
-      <label>3. Mobilidade?</label><br>
+      <label>3. Mobilidade:</label><br>
       <select name="p3">
         <option value="0">Acamado</option>
         <option value="1">Anda com ajuda</option>
@@ -42,7 +44,7 @@
     </div>
 
     <div class="pergunta">
-      <label>4. Estresse/doença aguda?</label><br>
+      <label>4. Estresse/doença aguda:</label><br>
       <select name="p4">
         <option value="0">Sim</option>
         <option value="2">Não</option>
@@ -50,7 +52,7 @@
     </div>
 
     <div class="pergunta">
-      <label>5. Problemas neuropsicológicos?</label><br>
+      <label>5. Problemas neuropsicológicos:</label><br>
       <select name="p5">
         <option value="0">Graves</option>
         <option value="1">Moderados</option>
@@ -59,7 +61,7 @@
     </div>
 
     <div class="pergunta">
-      <label>6. IMC?</label><br>
+      <label>6. IMC:</label><br>
       <select name="p6">
         <option value="0">Menor que 19</option>
         <option value="1">Entre 19 e 21</option>
@@ -73,10 +75,8 @@
 
   <div id="resultado-sf"></div>
 
-  <!-- MNA Completo (invisível no início) -->
-  <div id="mna-completo" style="display: none;">
+  <div id="mna-completo" style="display:none;">
     <h2>MNA Completo</h2>
-    <p>Você pode inserir aqui o formulário completo com mais perguntas, se desejar.</p>
 
     <form id="mna-completo-form">
       <div class="pergunta">
@@ -88,7 +88,7 @@
       </div>
 
       <div class="pergunta">
-        <label>8. Quantas refeições faz por dia?</label><br>
+        <label>8. Quantas refeições por dia?</label><br>
         <select name="c2">
           <option value="2">3 ou mais</option>
           <option value="1">2</option>
@@ -100,8 +100,8 @@
     </form>
   </div>
 
-  <div id="resultado-final"></div>
-
   <script src="script.js"></script>
 </body>
-</html>           
+</html>
+    
+      
