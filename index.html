@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MNA - Mini Avaliação Nutricional</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>MNA - Mini Avaliação Nutricional</h1>
+        <p class="subtitulo">App desenvolvido por Paula Guedes</p>
+
+        <form id="mna-form">
+            <div class="pergunta">
+                <label>1. Perda de apetite, problemas digestivos ou dificuldade de mastigar ou engolir?</label><br>
+                <select name="p1">
+                    <option value="0">Grave perda de apetite</option>
+                    <option value="1">Perda moderada de apetite</option>
+                    <option value="2">Sem perda de apetite</option>
+                </select>
+            </div>
+
+            <div class="pergunta">
+                <label>2. Perda recente de peso?</label><br>
+                <select name="p2">
+                    <option value="0">Perdeu mais de 3 kg</option>
+                    <option value="1">Não sabe</option>
+                    <option value="2">Perdeu entre 1 e 3 kg</option>
+                    <option value="3">Não perdeu peso</option>
+                </select>
+            </div>
+
+            <div class="pergunta">
+                <label>3. Mobilidade?</label><br>
+                <select name="p3">
+                    <option value="0">Acamado</option>
+                    <option value="1">Capaz de sair da cama/cadeira</option>
+                    <option value="2">Sai de casa</option>
+                </select>
+            </div>
+
+            <div class="pergunta">
+                <label>4. Sofreu estresse psicológico ou doença aguda nos últimos 3 meses?</label><br>
+                <select name="p4">
+                    <option value="0">Sim</option>
+                    <option value="2">Não</option>
+                </select>
+            </div>
+
+            <div class="pergunta">
+                <label>5. Problemas neuropsicológicos?</label><br>
+                <select name="p5">
+                    <option value="0">Demência grave ou depressão</option>
+                    <option value="1">Demência leve</option>
+                    <option value="2">Sem problemas psicológicos</option>
+                </select>
+            </div>
+
+            <div class="pergunta">
+                <label>6. IMC (Índice de Massa Corporal)?</label><br>
+                <select name="p6">
+                    <option value="0">Menor que 19</option>
+                    <option value="1">Entre 19 e 21</option>
+                    <option value="2">Entre 21 e 23</option>
+                    <option value="3">Maior que 23</option>
+                </select>
+            </div>
+
+            <button type="submit">Calcular Pontuação</button>
+        </form>
+
+        <div id="resultado" class="resultado"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
